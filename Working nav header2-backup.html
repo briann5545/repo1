@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Envision Technologies</title>
+<!-----------------  Using Flexbox to aligh header elements --------------->
+  <style>
+
+  body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#377ab4b5;
+  }
+
+  header {
+  padding-top: 20px ;
+  margin: 1%;
+  min-height: 90px;
+  background: #e6e6e6;
+  border-bottom: gray 2px solid;
+  }
+
+
+  .container1 { /* All Div's under Sections  */
+   width: 80%;
+   max-width: 1200px;
+   min-height: auto;
+   margin: 0 auto;
+   overflow: hidden;
+   display: flex;
+   flex-wrap: wrap; /*Nav links wrap*/
+  }
+
+  header #logo {
+  width: 30%;
+  height: 70px;
+  background-image: url(img/EnvisionLogo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 2px solid red ;
+  margin: 0;
+  }
+
+  header nav {
+  margin-top: auto; /* Aligns section to bottom*/
+  margin-left: auto; /*Aligns section to the right*/
+  margin-right: 50px;
+
+  }
+
+  nav ul {
+  margin: 0;
+  padding: 0;
+  }
+
+  nav li {
+  display: inline;
+  padding: 0 8px 0 8px;
+  margin-right: 0px;
+  font-weight: bold;
+    }
+
+  nav li a{
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: arial;
+  font-size: 11px;
+  }
+
+  header .current {
+  background: #464646;
+  }
+
+  header .current a {
+  color: white ;
+  }
+
+  header li a{
+  color: #3d87c7;
+  }
+
+  header li a:hover{
+  color: #636363;
+  }
+
+</style>
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container1">
+      <div id="logo"></div>
+      <nav>
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="programming.html">Programming</a></li>
+          <li><a href="products.html">Products We Sell</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container2">
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Envision Technologies</title>
+<!--- -      Using floats for header    --------->
+  <style>
+
+  body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#377ab4b5;
+  }
+
+  .container { /* All Div's under Sections  */
+   width: 80%;
+   margin: 0 auto;
+   overflow: hidden;
+   position: relative;
+  }
+
+  header {
+  padding-top: 20px ;
+  margin: 1%;
+  min-height: 90px;
+  background: #e6e6e6;
+  border-bottom: gray 2px solid;
+  }
+
+  header #logo { /* Header #logo floats left and Header Nav floats right - both on same level in container.  Nav li float left or text displays backward  */
+  width: 32%;
+  min-height: 70px;
+  background-image: url(img/EnvisionLogo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: px solid ;
+  margin: 0 ;
+  float: left;
+  }
+
+  header nav {
+  float: right;
+  margin-top: 42px;
+  }
+
+  nav ul {
+  margin: 0;
+  padding: 0;
+  }
+
+  nav li {
+  float: left;
+  display: inline;
+  padding: 0 8px 0 8px;
+  margin-right: 0px;
+  font-weight: bold;
+  }
+
+  nav li a{
+  color: #black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: arial;
+  font-size: 11px;
+  }
+
+  header .current {
+  background: #464646;
+  }
+
+  header .current a {
+  color: white ;
+  }
+
+  header li a{
+  color: #3d87c7;
+  }
+
+  header li a:hover{
+  color: #636363;
+  }
+</style>
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+      <div id="logo"></div>
+      <nav>
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="programming.html">Programming</a></li>
+          <li><a href="products.html">Products We Sell</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+  </body>
+</html>
