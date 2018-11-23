@@ -53,10 +53,12 @@ body{
   padding-left: 15px;
   color: #fff;
   }
+
 #contactlist{
   text-align: center;
   }
-#container2{
+
+.container2{
   display: grid;
   background-color: #f9fbfc;
   grid-template-columns: repeat(12, 1fr);
@@ -73,7 +75,7 @@ body{
   margin-bottom: 6px;
   }
 
-#icons{
+#icons{ /*position div on grid then flexbox for content inside*/
   grid-column: 10 /13;
   grid-row: 1/4;
   background-color: ;
@@ -86,31 +88,49 @@ body{
   text-decoration: underline;
   margin-bottom: 6px;
   }
+
 #sellingpoints{
-  border: 5px solid red;
+  //border: 5px solid red;
   grid-column: 1 /-1; /*Position div on the grid*/
   grid-row: 4/7;
-  display: grid; /*Turn div into grid for block divs*/
-  grid-template-columns: repeat(3, 1fr);
-
-
-
-
+  display: grid; /*Turn div into grid for child divs*/
+  grid-template-columns: repeat(3, 1fr); /*made 3 columns instead of positioning child divs on grid*/
+  //grid-gap: 2%;
   }
-#block1{
 
+#block1 {
+  align-items: center;
+  text-align: center;
+  display: flex; /* Div needs turned into flexbox to center p elements/content*/
   background-color: teal;
+  margin: 4%;
   }
-#block2{
 
+#block2{
+  align-items: center;
+  text-align: center;
+  display: flex;
   background-color: orange;
+  margin: 4%;
   }
 
 #block3{
-
+  align-items: center;
+  text-align: center;
+  display: flex;
   background-color: pink;
+  margin: 4%;
   }
-/*
+
+
+  .container3 {
+    background-color: blue;
+    height: 200px;
+    width: auto;
+  }
+
+/* Header outline boxes
+
 #logo{
   border: 2px solid red;
 }
