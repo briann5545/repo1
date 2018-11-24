@@ -2,7 +2,6 @@
 
 body{
   padding: 0;
-  margin-top: 15px;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   }
@@ -11,9 +10,10 @@ body{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 100px;
-  background-color: #e3e3e3;
-
+  background-color: rgba(40,147,201,0.2);
   }
+
+
 
 #logo {
   background-image: url('../img/EnvisionLogo.png');
@@ -32,13 +32,15 @@ body{
   display: flex;
   align-items:  flex-end;
   padding-bottom: 10px;
+  justify-content: center;
+
   }
 
 #navlinks > div{
   padding: 0 15px;
   font-family: arial;
   font-size: 14px;
-  color: #fff;
+  color: gray;
   font-weight: bold;
   }
 
@@ -53,7 +55,7 @@ body{
   font-weight: bold;
   list-style: none;
   padding-left: 15px;
-  color: #fff;
+  color: gray;
   }
 
 #contactlist{
@@ -64,31 +66,50 @@ body{
   display: grid;
   background-color: #f9fbfc;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows:  repeat(9, 120px);
+  grid-template-rows:  repeat(9, 150px);
+
   }
 
 #promo1{
   grid-column: 1/13;
   grid-row: 1/4;
-  background-image: url('../img/Promo1.jpg');
-  background-size: cover;
-  background-position: center;
+  background-image: url('../img/Promo8.png');
+  /*background-size: ;*/
+  background-position: top;
   background-repeat: no-repeat;
-  margin-bottom: 6px;
+  /*background-clip: ;*/
+  opacity: 0.5;
   }
 
-#icons{ /*position div on grid then flexbox for content inside*/
-  grid-column: 10 /13;
+#icons { /*position div on grid then flexbox for content inside*/
+  grid-column: 8 /13;
   grid-row: 1/4;
-  background-color: ;
   display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: center;
-  font-family: oswald;
-  color: gray;
-  text-decoration: underline;
-  margin-bottom: 6px;
+  align-items: center;
+  justify-content: left;
+  text-align: right; /*aligns icons to right*/
+  z-index: 1;
+  font-family: 'oswald', sans-serif;
+  font-size: 18px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-weight:bold;
+  color: black;
+  }
+
+
+
+#icons li{
+  padding-top: 30px; /*spaces li's vertically*/
+  list-style: none;
+  }
+
+
+.icons{
+  height: 60px;
+  padding-left: 15px;
+  vertical-align: middle; /*aligns icons center with text*/
+
   }
 
 #sellingpoints{
