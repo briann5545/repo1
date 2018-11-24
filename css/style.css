@@ -11,6 +11,8 @@ body{
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 100px;
   background-color: rgba(40,147,201,0.2);
+  max-width: 1600px;
+  margin: auto;
   }
 
 
@@ -66,19 +68,20 @@ body{
   display: grid;
   background-color: #f9fbfc;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows:  repeat(9, 150px);
-
+  grid-template-rows:  repeat(9, 120px);
+  margin: auto;
+  max-width: 1600px;
   }
 
 #promo1{
   grid-column: 1/13;
   grid-row: 1/4;
-  background-image: url('../img/Promo8.png');
+  background-image: url('../img/indy1600x360.png');
   /*background-size: ;*/
   background-position: top;
   background-repeat: no-repeat;
   /*background-clip: ;*/
-  opacity: 0.5;
+  opacity: 0.7;
   }
 
 #icons { /*position div on grid then flexbox for content inside*/
@@ -90,7 +93,7 @@ body{
   text-align: right; /*aligns icons to right*/
   z-index: 1;
   font-family: 'oswald', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   text-transform:uppercase;
   letter-spacing:2px;
   font-weight:bold;
@@ -106,19 +109,20 @@ body{
 
 
 .icons{
-  height: 60px;
+  height: 45px;
   padding-left: 15px;
   vertical-align: middle; /*aligns icons center with text*/
 
   }
 
 #sellingpoints{
-  //border: 5px solid red;
   grid-column: 1 /-1; /*Position div on the grid*/
   grid-row: 4/7;
   display: grid; /*Turn div into grid for child divs*/
   grid-template-columns: repeat(3, 1fr); /*made 3 columns instead of positioning child divs on grid*/
-  //grid-gap: 2%;
+  margin: 8px 0;
+  grid-column-gap: 10px;
+
   }
 
 #block1 {
@@ -126,7 +130,6 @@ body{
   text-align: center;
   display: flex; /* Div needs turned into flexbox to center p elements/content*/
   background-color: teal;
-  margin: 4%;
   }
 
 #block2{
@@ -134,7 +137,6 @@ body{
   text-align: center;
   display: flex;
   background-color: orange;
-  margin: 4%;
   }
 
 #block3{
@@ -142,7 +144,6 @@ body{
   text-align: center;
   display: flex;
   background-color: pink;
-  margin: 4%;
   }
 
 
